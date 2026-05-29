@@ -1,0 +1,123 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Smoking Scripts</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload page-index">
+			<div id="page-wrapper">
+					<header id="header">
+						<h1><a href="index.html">Smoking Scripts</a></h1>
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
+					<nav id="menu">
+						<div class="inner">
+							<h2>Menu</h2>
+							<ul class="links">
+								<li><a href="index.html">Home</a></li>
+								<li><a href="about-us.html">About Us</a></li>
+								<li><a href="milk.html">Milk</a></li>
+							</ul>
+							<a href="#" class="close">Close</a>
+						</div>
+					</nav>
+					<section id="banner">
+						<div class="inner">
+							<div class="logo"><span class="icon fa-gem"></span></div>
+							<h2>Vertex</h2>
+							<p>Our flagship product—the main push</p>
+						</div>
+					</section>
+					<section id="wrapper">
+							<section id="one" class="wrapper spotlight style1">
+								<div class="inner">
+									<span class="image"><img src="images/vtx.png" alt="" /></span>
+									<div class="content">
+										<h2 class="major">Stay on top</h2>
+										<p>Vertex's features for <i>Murder Mystery 2</i> and <i>Baddies</i> have been unrivaled for years; whether it be for farming or enhancing gameplay, users not only get ahead of regular players, but even win out against users of other scripts.</p>
+									</div>
+								</div>
+							</section>
+							<section id="three" class="wrapper alt spotlight style2">
+								<div class="inner">
+									<span class="image"><img src="images/rocket.webp" alt="" /></span>
+									<div class="content">
+										<h2 class="major">Easy setup</h2>
+										<p>Simply copy, paste, and run the script in your executor; no annoying popups or keysystems.</p>
+										<pre><code>loadstring(game:HttpGet('https://raw.smokingscripts.org/vertex.lua'))()</code></pre>
+                                        <ul class="actions fit small">
+                                            <li><a href="#" class="button fit icon solid fa-copy" onclick="copyVertex(this); return false;">Copy script</a></li>
+                                            <li><a href="https://discord.gg/vxt" target="_blank" rel="noopener noreferrer" class="button fit icon brands fa-discord">Discord server</a></li>
+                                        </ul>
+                                    </div>
+								</div>
+							</section>
+							<section id="four" class="wrapper style1">
+								<div class="inner">
+									<h2 class="major">Features</h2>
+									<p>With years of development and active feedback from our community, users can enjoy a variety of features in both games.</p>
+									<section class="features">
+										<article>
+											<a href="https://www.roblox.com/games/142823291/Murder-Mystery-2" target="_blank" rel="noopener noreferrer" class="image"><img src="images/mm2.webp" alt="" /></a>
+										<h3 class = "major"><a href="https://www.roblox.com/games/142823291/Murder-Mystery-2" target="_blank" rel="noopener noreferrer"> <u><i>Murder Mystery 2</i></u></a></h3>
+											<ul>
+												<li>Auto-Farm</li>
+												<li>Silent Aim</li>
+												<li>ESP (Players & Weapons)</li>
+												<li>Instant Kill</li>
+												<li>Hitbox Expander</li>
+												<li>End Round</li>
+												<li>Fling Target</li>
+												<li>Dodge Thrown Knife</li>
+												<li>Invisibility</li>
+											</ul>
+										</article>
+										<article>
+											<a href="https://www.roblox.com/games/11158043705/Baddies" target="_blank" rel="noopener noreferrer" class="image"><img src="images/baddies.webp" alt="" /></a>
+                                            <h3 class = "major"><a href="https://www.roblox.com/games/11158043705/Baddies" target="_blank" rel="noopener noreferrer"><u><i>Baddies</i></u></a></h3>
+                                                <ul>
+													<li>Anti-Stomp Protection</li>
+													<li>Remove Inventory Cooldown</li>
+													<li>Player ESP</li>
+                                                    <li>Teleportation</li>
+                                                    <li>Instant Kill Drag</li>
+												</ul>
+										</article>
+									</section>
+									<ul class="copyright-inline">
+										<li>&copy; Smoking Scripts. All rights reserved.</li>
+									</ul>
+								</div>
+							</section>
+					</section>
+			</div>
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+            <script>
+            function copyVertex(button) {
+                navigator.clipboard.writeText(
+                    `loadstring(game:HttpGet('https://raw.smokingscripts.org/vertex.lua'))()`
+                );
+                const originalText = button.textContent;
+                const originalClasses = button.className;
+                button.textContent = "Script copied!";
+                button.className = originalClasses.replace("fa-copy", "fa-check");
+                button.style.pointerEvents = "none";
+                setTimeout(() => {
+                    button.textContent = originalText;
+                    button.className = originalClasses;
+                    button.style.pointerEvents = "";
+                }, 3000);
+            }
+            </script>
+	</body>
+</html>
